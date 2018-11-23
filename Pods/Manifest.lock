@@ -1,0 +1,65 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CollectionKit (2.2.0):
+    - CollectionKit/Core (= 2.2.0)
+  - CollectionKit/Core (2.2.0)
+  - EasyTransitions (0.5.4)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - ObjectMapper (3.3.0)
+  - Result (3.2.4)
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/SQLCipher (0.11.5):
+    - SQLCipher (>= 3.4.0)
+  - SQLite.swift/standard (0.11.5)
+  - SwiftyJSON (4.2.0)
+  - WoodPeckeriOS (1.1.4)
+
+DEPENDENCIES:
+  - CollectionKit
+  - EasyTransitions
+  - Moya
+  - ObjectMapper
+  - Result
+  - SQLite.swift
+  - SQLite.swift/SQLCipher
+  - SwiftyJSON
+  - WoodPeckeriOS
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CollectionKit
+    - EasyTransitions
+    - Moya
+    - ObjectMapper
+    - Result
+    - SQLCipher
+    - SQLite.swift
+    - SwiftyJSON
+    - WoodPeckeriOS
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CollectionKit: 5caa5341860d4c9b748ebfeaab97530b2d02c7c0
+  EasyTransitions: 843a3e93b4cac14315e5d997b762bd1d214beb9c
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  WoodPeckeriOS: e12af9296607e7febefd52666d210cefdef1c44c
+
+PODFILE CHECKSUM: 1a1afe8e50e04cbe61646029fd4732b9a3468fde
+
+COCOAPODS: 1.5.0

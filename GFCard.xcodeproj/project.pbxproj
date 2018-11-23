@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29373CDF4361D1220A84AA9F /* Pods_GFCardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB14EF7192C67041608A4A7 /* Pods_GFCardUITests.framework */; };
+		BC1BBC5121A55DF700913CD0 /* CardBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1BBC5021A55DF700913CD0 /* CardBuilderView.swift */; };
+		BC2B429A21A7D12D00EEF6E5 /* GFDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B429921A7D12D00EEF6E5 /* GFDBManager.swift */; };
+		BC2B429D21A7D21600EEF6E5 /* CardNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B429C21A7D21600EEF6E5 /* CardNet.swift */; };
+		BC2B429F21A7E66F00EEF6E5 /* TestCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC355325219D0A3700AE5E24 /* TestCardsController.swift */; };
+		BC355328219D0F9D00AE5E24 /* TestMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC355327219D0F9D00AE5E24 /* TestMainController.swift */; };
+		BC35532A219D1F0B00AE5E24 /* TestBrainInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC355329219D1F0B00AE5E24 /* TestBrainInfoController.swift */; };
+		BC534091219BB57000ECB0F3 /* GFDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC534090219BB57000ECB0F3 /* GFDataManager.swift */; };
+		BC534093219BC9BC00ECB0F3 /* GFBrainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC534092219BC9BC00ECB0F3 /* GFBrainManager.swift */; };
+		BC8855B0218010A200E3141E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8855AF218010A200E3141E /* AppDelegate.swift */; };
+		BC8855B2218010A200E3141E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8855B1218010A200E3141E /* ViewController.swift */; };
+		BC8855B5218010A200E3141E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8855B3218010A200E3141E /* Main.storyboard */; };
+		BC8855B7218010A400E3141E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8855B6218010A400E3141E /* Assets.xcassets */; };
+		BC8855BA218010A400E3141E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8855B8218010A400E3141E /* LaunchScreen.storyboard */; };
+		BC8855C5218010A400E3141E /* GFCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8855C4218010A400E3141E /* GFCardTests.swift */; };
+		BC8855D0218010A400E3141E /* GFCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8855CF218010A400E3141E /* GFCardUITests.swift */; };
+		BC8855E321804A3200E3141E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8855E221804A3200E3141E /* UserNotifications.framework */; };
+		BC8855E521804A3200E3141E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8855E421804A3200E3141E /* UserNotificationsUI.framework */; };
+		BC8855E821804A3200E3141E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8855E721804A3200E3141E /* NotificationViewController.swift */; };
+		BC8855EB21804A3200E3141E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8855E921804A3200E3141E /* MainInterface.storyboard */; };
+		BC8855EF21804A3200E3141E /* CardNotification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC8855E121804A3200E3141E /* CardNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC88560421804B9400E3141E /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = BC88560321804B9400E3141E /* screenshot.png */; };
+		BC8856062180566900E3141E /* onevcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC8856052180566900E3141E /* onevcat.jpg */; };
+		BC88560821805C7600E3141E /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC88560721805C7600E3141E /* image.jpg */; };
+		BC88560A2180672800E3141E /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8856092180672800E3141E /* NotificationHandler.swift */; };
+		E134F88C00C215749E6B1FCD /* Pods_GFCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31468EA4364285692107116 /* Pods_GFCard.framework */; };
+		E8F85296D53EF2133E60C032 /* Pods_GFCardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2BECC8BEBC4E93418975CF /* Pods_GFCardTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8855C1218010A400E3141E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8855A4218010A200E3141E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8855AB218010A200E3141E;
+			remoteInfo = GFCard;
+		};
+		BC8855CC218010A400E3141E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8855A4218010A200E3141E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8855AB218010A200E3141E;
+			remoteInfo = GFCard;
+		};
+		BC8855ED21804A3200E3141E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8855A4218010A200E3141E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8855E021804A3200E3141E;
+			remoteInfo = CardNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC8855F321804A3200E3141E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC8855EF21804A3200E3141E /* CardNotification.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F49696046138E76AD7A59BE /* Pods-GFCardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFCardTests/Pods-GFCardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		372B5FC64C37BBBC337B7914 /* Pods-GFCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFCard/Pods-GFCard.release.xcconfig"; sourceTree = "<group>"; };
+		55811E4DCFDF520588137077 /* Pods-GFCardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFCardUITests/Pods-GFCardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A2BECC8BEBC4E93418975CF /* Pods_GFCardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFCardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB14EF7192C67041608A4A7 /* Pods_GFCardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFCardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DED929D7AF1FE353C1620D /* Pods-GFCardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFCardTests/Pods-GFCardTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C85AACE9E68B8049AF9710C /* Pods-GFCardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GFCardUITests/Pods-GFCardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A31468EA4364285692107116 /* Pods_GFCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1BBC5021A55DF700913CD0 /* CardBuilderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBuilderView.swift; sourceTree = "<group>"; };
+		BC2B429921A7D12D00EEF6E5 /* GFDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDBManager.swift; sourceTree = "<group>"; };
+		BC2B429C21A7D21600EEF6E5 /* CardNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNet.swift; sourceTree = "<group>"; };
+		BC2B429E21A7DC2600EEF6E5 /* Document.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Document.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BC355323219CFB0900AE5E24 /* TestCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardController.swift; sourceTree = "<group>"; };
+		BC355325219D0A3700AE5E24 /* TestCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardsController.swift; sourceTree = "<group>"; };
+		BC355327219D0F9D00AE5E24 /* TestMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMainController.swift; sourceTree = "<group>"; };
+		BC355329219D1F0B00AE5E24 /* TestBrainInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBrainInfoController.swift; sourceTree = "<group>"; };
+		BC534090219BB57000ECB0F3 /* GFDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataManager.swift; sourceTree = "<group>"; };
+		BC534092219BC9BC00ECB0F3 /* GFBrainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBrainManager.swift; sourceTree = "<group>"; };
+		BC8855AC218010A200E3141E /* GFCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8855AF218010A200E3141E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC8855B1218010A200E3141E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC8855B4218010A200E3141E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8855B6218010A400E3141E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8855B9218010A400E3141E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8855BB218010A400E3141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8855C0218010A400E3141E /* GFCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8855C4218010A400E3141E /* GFCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCardTests.swift; sourceTree = "<group>"; };
+		BC8855C6218010A400E3141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8855CB218010A400E3141E /* GFCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8855CF218010A400E3141E /* GFCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCardUITests.swift; sourceTree = "<group>"; };
+		BC8855D1218010A400E3141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8855E121804A3200E3141E /* CardNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CardNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8855E221804A3200E3141E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		BC8855E421804A3200E3141E /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		BC8855E721804A3200E3141E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		BC8855EA21804A3200E3141E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BC8855EC21804A3200E3141E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC88560321804B9400E3141E /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		BC8856052180566900E3141E /* onevcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onevcat.jpg; sourceTree = "<group>"; };
+		BC88560721805C7600E3141E /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		BC8856092180672800E3141E /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		DD99630073201C8CE1C303C1 /* Pods-GFCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GFCard/Pods-GFCard.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8855A9218010A200E3141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E134F88C00C215749E6B1FCD /* Pods_GFCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855BD218010A400E3141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F85296D53EF2133E60C032 /* Pods_GFCardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855C8218010A400E3141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29373CDF4361D1220A84AA9F /* Pods_GFCardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855DE21804A3200E3141E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855E521804A3200E3141E /* UserNotificationsUI.framework in Frameworks */,
+				BC8855E321804A3200E3141E /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4731AB6534E1FD06F4E738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD99630073201C8CE1C303C1 /* Pods-GFCard.debug.xcconfig */,
+				372B5FC64C37BBBC337B7914 /* Pods-GFCard.release.xcconfig */,
+				2F49696046138E76AD7A59BE /* Pods-GFCardTests.debug.xcconfig */,
+				82DED929D7AF1FE353C1620D /* Pods-GFCardTests.release.xcconfig */,
+				55811E4DCFDF520588137077 /* Pods-GFCardUITests.debug.xcconfig */,
+				9C85AACE9E68B8049AF9710C /* Pods-GFCardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC2B429B21A7D20A00EEF6E5 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B429C21A7D21600EEF6E5 /* CardNet.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		BC2B42A021A7FEF800EEF6E5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BC534090219BB57000ECB0F3 /* GFDataManager.swift */,
+				BC534092219BC9BC00ECB0F3 /* GFBrainManager.swift */,
+				BC2B429921A7D12D00EEF6E5 /* GFDBManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BC8855A3218010A200E3141E = {
+			isa = PBXGroup;
+			children = (
+				BC2B429E21A7DC2600EEF6E5 /* Document.playground */,
+				BC8855AE218010A200E3141E /* GFCard */,
+				BC8855C3218010A400E3141E /* GFCardTests */,
+				BC8855CE218010A400E3141E /* GFCardUITests */,
+				BC8855E621804A3200E3141E /* CardNotification */,
+				BC8855AD218010A200E3141E /* Products */,
+				AE4731AB6534E1FD06F4E738 /* Pods */,
+				D5E71C790CC2920AD7FD20BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8855AD218010A200E3141E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8855AC218010A200E3141E /* GFCard.app */,
+				BC8855C0218010A400E3141E /* GFCardTests.xctest */,
+				BC8855CB218010A400E3141E /* GFCardUITests.xctest */,
+				BC8855E121804A3200E3141E /* CardNotification.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8855AE218010A200E3141E /* GFCard */ = {
+			isa = PBXGroup;
+			children = (
+				BC2B42A021A7FEF800EEF6E5 /* Manager */,
+				BC2B429B21A7D20A00EEF6E5 /* Net */,
+				BC1BBC5021A55DF700913CD0 /* CardBuilderView.swift */,
+				BC8856092180672800E3141E /* NotificationHandler.swift */,
+				BC88560721805C7600E3141E /* image.jpg */,
+				BC8856052180566900E3141E /* onevcat.jpg */,
+				BC88560321804B9400E3141E /* screenshot.png */,
+				BC8855AF218010A200E3141E /* AppDelegate.swift */,
+				BC8855B1218010A200E3141E /* ViewController.swift */,
+				BC8855B3218010A200E3141E /* Main.storyboard */,
+				BC8855B6218010A400E3141E /* Assets.xcassets */,
+				BC8855B8218010A400E3141E /* LaunchScreen.storyboard */,
+				BC8855BB218010A400E3141E /* Info.plist */,
+				BC355323219CFB0900AE5E24 /* TestCardController.swift */,
+				BC355325219D0A3700AE5E24 /* TestCardsController.swift */,
+				BC355327219D0F9D00AE5E24 /* TestMainController.swift */,
+				BC355329219D1F0B00AE5E24 /* TestBrainInfoController.swift */,
+			);
+			path = GFCard;
+			sourceTree = "<group>";
+		};
+		BC8855C3218010A400E3141E /* GFCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8855C4218010A400E3141E /* GFCardTests.swift */,
+				BC8855C6218010A400E3141E /* Info.plist */,
+			);
+			path = GFCardTests;
+			sourceTree = "<group>";
+		};
+		BC8855CE218010A400E3141E /* GFCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8855CF218010A400E3141E /* GFCardUITests.swift */,
+				BC8855D1218010A400E3141E /* Info.plist */,
+			);
+			path = GFCardUITests;
+			sourceTree = "<group>";
+		};
+		BC8855E621804A3200E3141E /* CardNotification */ = {
+			isa = PBXGroup;
+			children = (
+				BC8855E721804A3200E3141E /* NotificationViewController.swift */,
+				BC8855E921804A3200E3141E /* MainInterface.storyboard */,
+				BC8855EC21804A3200E3141E /* Info.plist */,
+			);
+			path = CardNotification;
+			sourceTree = "<group>";
+		};
+		D5E71C790CC2920AD7FD20BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A31468EA4364285692107116 /* Pods_GFCard.framework */,
+				6A2BECC8BEBC4E93418975CF /* Pods_GFCardTests.framework */,
+				7CB14EF7192C67041608A4A7 /* Pods_GFCardUITests.framework */,
+				BC8855E221804A3200E3141E /* UserNotifications.framework */,
+				BC8855E421804A3200E3141E /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8855AB218010A200E3141E /* GFCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8855D4218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCard" */;
+			buildPhases = (
+				7E9692330BADE131F9AF55E2 /* [CP] Check Pods Manifest.lock */,
+				BC8855A8218010A200E3141E /* Sources */,
+				BC8855A9218010A200E3141E /* Frameworks */,
+				BC8855AA218010A200E3141E /* Resources */,
+				194CB067EA0B53BDCFE37DE3 /* [CP] Embed Pods Frameworks */,
+				BC8855F321804A3200E3141E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8855EE21804A3200E3141E /* PBXTargetDependency */,
+			);
+			name = GFCard;
+			productName = GFCard;
+			productReference = BC8855AC218010A200E3141E /* GFCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC8855BF218010A400E3141E /* GFCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8855D7218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCardTests" */;
+			buildPhases = (
+				AB478111FEDAC0DE143DD7EB /* [CP] Check Pods Manifest.lock */,
+				BC8855BC218010A400E3141E /* Sources */,
+				BC8855BD218010A400E3141E /* Frameworks */,
+				BC8855BE218010A400E3141E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8855C2218010A400E3141E /* PBXTargetDependency */,
+			);
+			name = GFCardTests;
+			productName = GFCardTests;
+			productReference = BC8855C0218010A400E3141E /* GFCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC8855CA218010A400E3141E /* GFCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8855DA218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCardUITests" */;
+			buildPhases = (
+				0BD4D8E09A8A1113AFFD3F5D /* [CP] Check Pods Manifest.lock */,
+				BC8855C7218010A400E3141E /* Sources */,
+				BC8855C8218010A400E3141E /* Frameworks */,
+				BC8855C9218010A400E3141E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8855CD218010A400E3141E /* PBXTargetDependency */,
+			);
+			name = GFCardUITests;
+			productName = GFCardUITests;
+			productReference = BC8855CB218010A400E3141E /* GFCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BC8855E021804A3200E3141E /* CardNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8855F021804A3200E3141E /* Build configuration list for PBXNativeTarget "CardNotification" */;
+			buildPhases = (
+				BC8855DD21804A3200E3141E /* Sources */,
+				BC8855DE21804A3200E3141E /* Frameworks */,
+				BC8855DF21804A3200E3141E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardNotification;
+			productName = CardNotification;
+			productReference = BC8855E121804A3200E3141E /* CardNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8855A4218010A200E3141E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = gaof;
+				TargetAttributes = {
+					BC8855AB218010A200E3141E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BC8855BF218010A400E3141E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BC8855AB218010A200E3141E;
+					};
+					BC8855CA218010A400E3141E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BC8855AB218010A200E3141E;
+					};
+					BC8855E021804A3200E3141E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = BC8855A7218010A200E3141E /* Build configuration list for PBXProject "GFCard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8855A3218010A200E3141E;
+			productRefGroup = BC8855AD218010A200E3141E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8855AB218010A200E3141E /* GFCard */,
+				BC8855BF218010A400E3141E /* GFCardTests */,
+				BC8855CA218010A400E3141E /* GFCardUITests */,
+				BC8855E021804A3200E3141E /* CardNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8855AA218010A200E3141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855BA218010A400E3141E /* LaunchScreen.storyboard in Resources */,
+				BC8855B7218010A400E3141E /* Assets.xcassets in Resources */,
+				BC8855B5218010A200E3141E /* Main.storyboard in Resources */,
+				BC8856062180566900E3141E /* onevcat.jpg in Resources */,
+				BC88560421804B9400E3141E /* screenshot.png in Resources */,
+				BC88560821805C7600E3141E /* image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855BE218010A400E3141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855C9218010A400E3141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855DF21804A3200E3141E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855EB21804A3200E3141E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD4D8E09A8A1113AFFD3F5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GFCardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		194CB067EA0B53BDCFE37DE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GFCard/Pods-GFCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyTransitions/EasyTransitions.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/WoodPeckeriOS/WoodPeckeriOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTransitions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WoodPeckeriOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GFCard/Pods-GFCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9692330BADE131F9AF55E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GFCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB478111FEDAC0DE143DD7EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GFCardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8855A8218010A200E3141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2B429A21A7D12D00EEF6E5 /* GFDBManager.swift in Sources */,
+				BC2B429D21A7D21600EEF6E5 /* CardNet.swift in Sources */,
+				BC355328219D0F9D00AE5E24 /* TestMainController.swift in Sources */,
+				BC2B429F21A7E66F00EEF6E5 /* TestCardsController.swift in Sources */,
+				BC534093219BC9BC00ECB0F3 /* GFBrainManager.swift in Sources */,
+				BC8855B2218010A200E3141E /* ViewController.swift in Sources */,
+				BC88560A2180672800E3141E /* NotificationHandler.swift in Sources */,
+				BC8855B0218010A200E3141E /* AppDelegate.swift in Sources */,
+				BC35532A219D1F0B00AE5E24 /* TestBrainInfoController.swift in Sources */,
+				BC1BBC5121A55DF700913CD0 /* CardBuilderView.swift in Sources */,
+				BC534091219BB57000ECB0F3 /* GFDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855BC218010A400E3141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855C5218010A400E3141E /* GFCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855C7218010A400E3141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855D0218010A400E3141E /* GFCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8855DD21804A3200E3141E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8855E821804A3200E3141E /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8855C2218010A400E3141E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8855AB218010A200E3141E /* GFCard */;
+			targetProxy = BC8855C1218010A400E3141E /* PBXContainerItemProxy */;
+		};
+		BC8855CD218010A400E3141E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8855AB218010A200E3141E /* GFCard */;
+			targetProxy = BC8855CC218010A400E3141E /* PBXContainerItemProxy */;
+		};
+		BC8855EE21804A3200E3141E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8855E021804A3200E3141E /* CardNotification */;
+			targetProxy = BC8855ED21804A3200E3141E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC8855B3218010A200E3141E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8855B4218010A200E3141E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8855B8218010A400E3141E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8855B9218010A400E3141E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8855E921804A3200E3141E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8855EA21804A3200E3141E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC8855D2218010A400E3141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC8855D3218010A400E3141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8855D5218010A400E3141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD99630073201C8CE1C303C1 /* Pods-GFCard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ49B8YY9P;
+				INFOPLIST_FILE = GFCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8855D6218010A400E3141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372B5FC64C37BBBC337B7914 /* Pods-GFCard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ49B8YY9P;
+				INFOPLIST_FILE = GFCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC8855D8218010A400E3141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F49696046138E76AD7A59BE /* Pods-GFCardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GFCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFCard.app/GFCard";
+			};
+			name = Debug;
+		};
+		BC8855D9218010A400E3141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DED929D7AF1FE353C1620D /* Pods-GFCardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GFCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFCard.app/GFCard";
+			};
+			name = Release;
+		};
+		BC8855DB218010A400E3141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55811E4DCFDF520588137077 /* Pods-GFCardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GFCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GFCard;
+			};
+			name = Debug;
+		};
+		BC8855DC218010A400E3141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C85AACE9E68B8049AF9710C /* Pods-GFCardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GFCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GFCard;
+			};
+			name = Release;
+		};
+		BC8855F121804A3200E3141E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ49B8YY9P;
+				INFOPLIST_FILE = CardNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCard.CardNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8855F221804A3200E3141E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BQ49B8YY9P;
+				INFOPLIST_FILE = CardNotification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = card.gaooof.com.GFCard.CardNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8855A7218010A200E3141E /* Build configuration list for PBXProject "GFCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8855D2218010A400E3141E /* Debug */,
+				BC8855D3218010A400E3141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8855D4218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8855D5218010A400E3141E /* Debug */,
+				BC8855D6218010A400E3141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8855D7218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8855D8218010A400E3141E /* Debug */,
+				BC8855D9218010A400E3141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8855DA218010A400E3141E /* Build configuration list for PBXNativeTarget "GFCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8855DB218010A400E3141E /* Debug */,
+				BC8855DC218010A400E3141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8855F021804A3200E3141E /* Build configuration list for PBXNativeTarget "CardNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8855F121804A3200E3141E /* Debug */,
+				BC8855F221804A3200E3141E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8855A4218010A200E3141E /* Project object */;
+}
